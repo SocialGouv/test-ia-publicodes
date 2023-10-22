@@ -8,6 +8,7 @@
     "start": "tsc && node dist/index.js"
   },
   "dependencies": {
+    "dotenv": "16.3.1",
     "openai": "4.12.4",
     "publicodes": "1.0.0-beta.77"
   },

@@ -1,3 +1,4 @@
+import "dotenv/config"
 import OpenAI from "openai"
 import Engine from "publicodes"
 import * as readline from "node:readline/promises"
@@ -16,7 +17,7 @@ const model = "gpt-3.5-turbo-0613"
 const rl = readline.createInterface(process.stdin, process.stdout)
 
 const openai = new OpenAI({
-  apiKey: "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",
+  apiKey: process.env.OPENAI_API_KEY,
 })
 
 function getTopMissingVariable(missingVariables) {
